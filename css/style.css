@@ -1,0 +1,229 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper {
+    width: 100%;
+    height: 500px;
+    background-color: red;
+}
+.head {
+    width: 100%;
+    height: 750px;
+    background-image: url("/images/Rectangle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.darker {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.menu {
+    width: 100%;
+    height: 28px;
+    padding-top: 50px;
+    padding-right: 150px;
+    padding-left:200px;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu > ul {
+    display: flex;
+    justify-content: space-between; 
+    margin: 0 auto;
+}
+.menu > ul a {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+}
+#lk {
+    color:#87D9F1;
+}
+.arrow_header {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    padding: 15% 8%;
+    flex-direction: column;
+    
+}
+.arrow_header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.small_descr {
+    margin-top: 13px;
+    font-size: 1rem;
+}
+.big_descr {
+    margin-top: 50px;
+    font-size: 1.7rem;
+    width: 610px;
+}
+.baseinfo {
+    width: 100%;
+    height: 750px;
+    background-color: #2c2c2c;
+    position: relative;
+}
+.infoBlockBar {
+    width:100%;
+    display: flex;
+    position: absolute;
+    top: -72px;
+    justify-content: space-around;
+}
+.infoBlock {
+    display:flex;
+    width: 345px;
+    height: 140px;
+    box-shadow: 4px 4px 4px rgba(229, 229, 229, 0.18);
+    background-color: white;
+    border-radius: 6px;
+    
+}
+.sign_header {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    padding: 8% 8% 8% 8%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    justify-content: space-around;;
+}
+.icon_row {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+}
+.icon_row > div {
+    width: 340px;
+    text-align: center;
+    
+}
+.icon_row p {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    color: white;
+}
+.objects {
+    width: 100%;
+    height: 750px;
+    background-color: darkblue;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+}
+.st_photo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: red;
+}
+.nd_photo {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    background-color: green;
+}
+.rd_photo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: purple;
+}
+.th_photo {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    background-color: yellow;
+}
+.contacts {
+    width: 100%;
+    height: 850px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2c2c2c;
+    
+}
+.contacts > p {
+    width: 450px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.inputs {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 30% 40% 30%;
+    margin-top: 40px;
+}
+.who_group {
+    grid-row-start: 1;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-start: 3;
+
+}
+.email_group {
+
+}
+.message_group {
+
+}
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: darkgreen;
+}
+
+.burger {
+    display: none;
+}
+.nav_name {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .infoBlockBar {
+        display: none;
+
+    }
+    .menu {
+        display: none;
+    }
+    .burger {
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .burger > span{
+        width: 22px;
+        height: 2px;
+        border: px solid white;
+        border-radius: 3px;
+        background-color: white;
+        display: block;
+        margin-top: 5px;
+    }
+    .nav_name {
+        height: 25px;
+        display: inline-block;
+        color: white;
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
+
+
+}
