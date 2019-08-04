@@ -4,13 +4,12 @@ body {
 }
 .wrapper {
     width: 100%;
-    height: 500px;
     background-color: red;
 }
 .head {
     width: 100%;
     height: 750px;
-    background-image: url("/images/Rectangle.png");
+    background-image: url("/blackarrow/images/Rectangle.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +17,7 @@ body {
     
 }
 .darker {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 10, 0.7);
     position: absolute;
     top: 0;
     left: 0;
@@ -26,12 +25,14 @@ body {
     height: 100%;
 }
 .menu {
+    letter-spacing: 0.02em;
     width: 100%;
     height: 28px;
     padding-top: 50px;
     padding-right: 150px;
     padding-left:200px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 .menu > ul {
     display: flex;
@@ -48,7 +49,6 @@ body {
 }
 .arrow_header {
     color: white;
-    font-family: 'Montserrat', sans-serif;
     display: flex;
     padding: 15% 8%;
     flex-direction: column;
@@ -56,7 +56,7 @@ body {
 }
 .arrow_header h1 {
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 .small_descr {
     margin-top: 13px;
@@ -70,7 +70,7 @@ body {
 .baseinfo {
     width: 100%;
     height: 750px;
-    background-color: #2c2c2c;
+    background-color: #161616;
     position: relative;
 }
 .infoBlockBar {
@@ -81,27 +81,39 @@ body {
     justify-content: space-around;
 }
 .infoBlock {
-    display:flex;
     width: 345px;
     height: 140px;
+    color: #397C8F;
+    font-size: 1.2rem;
+    font-weight: 500;
     box-shadow: 4px 4px 4px rgba(229, 229, 229, 0.18);
     background-color: white;
     border-radius: 6px;
     
 }
-.sign_header {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+.infoBlock p {
+    margin: 5%;
+    margin-top: 10%;
+    align-items: stretch;
+    height: 50px;
+}
+.low {
     display: flex;
-    padding: 8% 8% 8% 8%;
+    margin: 5%;
+    margin-left: 75%;
+}
+.sign_header {
+    letter-spacing: 0.1em;
+    color: white;
+    display: flex;
+    padding: 5%;
     font-size: 1.8rem;
-    font-weight: bold;
-    justify-content: space-around;;
+    font-weight: 500;
+    justify-content: space-around;
 }
 .icon_row {
     display: flex;
     justify-content: space-around;
-    font-family: 'Montserrat', sans-serif;
 }
 .icon_row > div {
     width: 340px;
@@ -123,71 +135,166 @@ body {
 }
 .st_photo {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
+    background-image: url("/blackarrow/images/1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: red;
+    position: relative;
 }
 .nd_photo {
-    grid-column-start: 4;
+    grid-column-start: 3;
     grid-column-end: 6;
     background-color: green;
+    background-image: url("/blackarrow/images/2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 .rd_photo {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 2;
     background-color: purple;
+    background-image: url("/blackarrow/images/3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 .th_photo {
+    grid-column-start: 4;
+    grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 6;
     background-color: yellow;
+    background-image: url("/blackarrow/images/4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.canvas {
+    clear: both;
+    display: flex;
+}
+.photo_label {
+    margin:30px;
+    margin-top: 300px;
+    color: white;
+    flex-direction: column-reverse;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+.main_photo {
+    font-size: 2.2rem;
+    color: #87D9F1;
 }
 .contacts {
-    width: 100%;
-    height: 850px;
+    font-weight: 300;
+    margin: 0 auto;
+    height: 930px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #2c2c2c;
+    background-color: #161616;
+    position: relative;
     
 }
 .contacts > p {
-    width: 450px;
+    line-height: 2rem;
+    width: 550px;
     text-align: center;
     margin: 0 auto;
-    
+}
+.small {
+    font-size: 0.9rem;
 }
 .inputs {
+    width:450px;
+    margin: 20px auto;
+    display: flex;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
     font-size: 1rem;
-    font-weight: bold;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 30% 40% 30%;
+    flex-direction: column;
+}
+
+.input {
+    margin-top: 15px;
+    width: 460px;
+    border-radius: 4px;
+}
+input {
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+    color: rgb(158, 158, 158);
+    padding-left: 20px;
+}
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(158, 158, 158);
+    padding-left: 20px;
+    padding-top: 15px;
+    height: 90px;
+    width: 140px;
+}
+label {
+    font-size: 0.9rem;
+}
+.checktext {
+    margin-left: 7px;
+    font-size: 0.8rem;
+}
+.check {
+    display: flex;
+    height: 20px;
+    width: 10%;
+    margin: 0;
+}
+.check_input {
+    display: flex;
+}
+#submit_btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    align-self: center;
+    text-align: center;
+    width: 170px;
+    height: 50px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: #528290;
+    border-color: #161616;
+    border: 0 solid;
+    color: white;
+    letter-spacing: 0.1em;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.2);
     margin-top: 40px;
-}
-.who_group {
-    grid-row-start: 1;
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-start: 3;
-
-}
-.email_group {
-
-}
-.message_group {
-
 }
 .footer {
     width: 100%;
     height: 400px;
-    background-color: darkgreen;
+    background-color: rgb(10, 9, 9);
+    display: flex;
+    justify-content: space-around;
+    
 }
-
+.logo_container {
+    width: 300px;
+}
+.logo_container h3 {
+    color: white;
+    display: flex;
+    padding: 5%;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.social-logos {
+    display: flex;
+    justify-content: space-around;
+}
 .burger {
     display: none;
 }

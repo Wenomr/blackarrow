@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
     <body>
@@ -44,13 +44,16 @@
             <div class="baseinfo">
                 <div class = "infoBlockBar">
                         <div class = "infoBlock">
-                            1
+                            <p>Внести показания счетчиков и оплатить квитанции</p>
+                            <img class = "low" src="images/arrow.svg" alt="..."> 
                         </div>
                         <div class = "infoBlock">
-                            2
+                            <p>Заказать дополнительные услуги</p>
+                            <img class = "low" src="images/arrow.svg" alt="..."> 
                         </div>
                         <div class = "infoBlock">
-                            3
+                            <p>Начать сотрудничество</p>
+                            <img class = "low" src="images/arrow.svg" alt="..."> 
                         </div>
                 </div>
                 <br><br><br><br>
@@ -59,15 +62,15 @@
                 </div>
                 <div class = "icon_row">
                     <div id = "gear_icon">
-                        <img src="/images/gear.svg" alt="...">                           
+                        <img src="images/gear.svg" alt="...">                           
                         <p>Самые современные технологии в управлении домами</p>
                     </div>
                     <div class = "bars_icon">
-                        <img src="/images/bars.svg" alt="...">
+                        <img src="images/bars.svg" alt="...">
                         <p>Только проверенные застройщики</p>
                     </div>
                     <div class = "peaple_icon">
-                        <img src="/images/people.svg" alt="...">
+                        <img src="images/people.svg" alt="...">
                         <p>Круглосуточный клиентский сервис</p>
                     </div>
                 </div>
@@ -76,33 +79,70 @@
                 </div>
             </div>
             <div class="objects">
-                <div class = "st_photo"></div>
-                <div class = "nd_photo"></div>
-                <div class = "rd_photo"></div>
-                <div class = "th_photo"></div>
+                <div class = "st_photo"><div class = "darker">
+                    <div class = "canvas">
+                        <h2 class = "photo_label main_photo">ЛЕСНОЙ ПР., 26</h2>
+                    </div>
+                </div>
+            </div>
+                <div class = "nd_photo"><div class = "darker">
+                    <div class = "canvas">
+                        <h2 class = "photo_label">НЕВСКИЙ ПР., 170</h2>
+                    </div>
+                </div>
+            </div>
+                <div class = "rd_photo"><div class = "darker">
+                    <div class = "canvas">
+                        <h2 class = "photo_label">НОВГОРОДСКАЯ УЛ., 19</h2>
+                    </div>
+                </div>
+            </div>
+                <div class = "th_photo"><div class = "darker">
+                    <div class = "canvas">
+                        <h2 class = "photo_label">ПР. МЕДИКОВ, 29</h2>
+                    </div>
+                </div>
+            </div>
             </div>
             <div class="contacts">
                 <h1 class = "sign_header">НАПИШИТЕ НАМ</h1>
                 <p>Если у вас есть какие-либо вопросы по работе Черной Стрелы, дополнительным услугам или вы не нашли то, что искали.</p>
                 <br>
-                <p>* отвечаем, в среднем, за 5 минут</p>
-                <div class = "inputs">
-                    <div class = "who_group"></div>
-                        <label for="who">Как к вам обращаться?</label>
-                        <input name = "who" type="text">
-                    </div>
-                    <div class = "email_group">
-                        <label for="email">Электронная почта</label>
-                        <input name = "email" type="email">
-                    </div>
-                    <div class = "message_group">
-                        <label for="massage">Ваше сообщение</label><br>
-                        <textarea name="massage" id="" cols="30" rows="10"></textarea>
+                <p class = "small" >* отвечаем, в среднем, за 5 минут</p>
+                    <div class = "inputs">
+                        
+                            <label class = "input" for="who">Как к вам обращаться?</label>
+                            <input class = "input" name = "who" type="text" placeholder = "Ваше имя">
+                        
+                            <label class = "input" for="email">Электронная почта</label>
+                            <input class = "input" name = "email" type="email"  placeholder = "belka23@gmail.com">
+                            <br />
+                        
+                            <label class = "input" for="massage">Ваше сообщение</label>
+                            <textarea class = "input" name="massage" id="" placeholder="Введите текст"></textarea>
+
+                            <div class = "input check_input">
+                                <input class = "check" type="checkbox">
+                                <p class ="checktext">я согласен (-сна) с политикой обработки персональных данных</p>
+                            </div>
+                            <button id="submit_btn">ОТПРАВИТЬ</button>
                     </div>
                 </div>
             </div>
-            <!-- <footer class="footer"></footer> -->
+            <footer class="footer">
+                
+                    <div class = "logo_container">
+                        <h3 class = "main_logo">ЧЕРНАЯ СТРЕЛА</h3>
+                        <div class = "social-logos">
+                            <img class = "" src = "images/vk_icon.svg">
+                            <img class = "" src = "images/instagramm_icon.svg">
+                            <img class = "" src = "images/facebook_icon.svg">
+                        </div>
+                    </div>
+                    <div class = "list_container">
+                    </div>
+                </
+            </footer>
         </div>
-    
     </body>
 </html>
