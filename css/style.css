@@ -288,7 +288,7 @@ label {
     line-height: 2rem;
 }
 .social-logos {
-    padding-top: 30px;
+    padding-top: 30px;git 
     width: 250px;
     display: flex;
     justify-content: space-around;
@@ -471,13 +471,13 @@ label {
     .logo_container h3 {
         color: white;
         display: flex;
-        margin-left: 30px;
+        margin-left: 50px;
         font-size: 1.7rem;
         font-weight: 600;
     }
     .logo_container > p {
         display: flex;
-        margin-left: 50px;
+        margin-left: 60px;
         color: #87D9F1;
         font-size: 1.4rem;
     }
