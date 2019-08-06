@@ -18,12 +18,12 @@ body {
     position: relative;
 }
 .darker {
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 10, 0.7);
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
 }
 .menu {
     letter-spacing: 0.02em;
@@ -31,7 +31,7 @@ body {
     height: 28px;
     padding-top: 50px;
     padding-right: 150px;
-    padding-left:200px;
+    padding-left: 200px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
@@ -51,19 +51,18 @@ body {
 .arrow_header {
     color: white;
     display: flex;
-    padding: 150px 150px 50px 90px;
+    margin: 150px 150px 50px 90px;
     flex-direction: column;
-    
 }
 .arrow_header h1 {
     font-size: 3rem;
     font-weight: 500;
 }
-.small_descr {
+.resizable_descr {
     margin-top: 13px;
     font-size: 1rem;
 }
-.big_descr {
+.main_descr {
     font-weight: 400;
     margin-top: 50px;
     font-size: 1.6rem;
@@ -183,7 +182,7 @@ body {
 }
 .contacts {
     font-weight: 300;
-    margin: 0 auto;
+    width: 100%;
     height: 930px;
     color: white;
     background-color: #161616;
@@ -201,7 +200,7 @@ body {
     font-size: 0.9rem !important;
 }
 .inputs {
-    width:450px;
+    width:100%;
     margin: 20px auto;
     display: flex;
     color: white;
@@ -209,8 +208,9 @@ body {
     flex-direction: column;
 }
 .input {
-    margin-top: 15px;
-    width: 460px;
+    display: inline-block;
+    width: 650px;
+    margin: 5px auto;
     border-radius: 4px;
 }
 input {
@@ -223,7 +223,6 @@ textarea {
     color: rgb(158, 158, 158);
     padding-top: 15px;
     height: 90px;
-    width: 140px;
 }
 label {
     font-size: 0.9rem;
@@ -273,7 +272,7 @@ label {
 .logo_container h3 {
     color: white;
     display: flex;
-    padding: 10px;
+    padding-bottom: 10px;
     font-size: 1.7rem;
     font-weight: 600;
 }
@@ -293,13 +292,10 @@ label {
     display: flex;
     justify-content: space-around;
 }
-.burger {
+.nav_mobile {
     display: none;
 }
-.nav_name {
-    display: none;
-}
-.infoBlockBar2 {
+.infoBlockBar_mobile {
     display: none;
 }
 .description_mobile {
@@ -308,11 +304,22 @@ label {
 .logo_container > p {
     display: none;
 }
-.social-logos2 {
+.social-logos_mobile {
     display: none;
 }
 
 @media (max-width: 1080px) {
+    .nav_mobile {
+        display: inline-block;
+        width: 100%;
+    }
+    .nav_name {
+        height: 25px;
+        display: inline-block;
+        color: white;
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
     .burger {
         display: inline-block;
         margin-left: 20px;
@@ -327,27 +334,34 @@ label {
         display: block;
         margin-top: 5px;
     }
-    .nav_name {
-        height: 25px;
-        display: inline-block;
-        color: white;
-        font-size: 1.3rem;
-        margin-left: 10px;
+    #lk_icon {
+        height: 35px;
+        margin: 10px;
+        float: right;
     }
-    .small_descr {
-        font-size: 3rem;
+    .arrow_header {
+        flex-direction: row;
+        margin: 80px 0;
+        justify-content: space-around;
+    }
+    .resizable_descr {
+        font-size: 2.2rem;
+        text-align: center;
         display: flex;
+        padding: 0;
+        margin: 0;
     }
-    .infoBlockBar2 {
+    .infoBlockBar_mobile {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        width:80%;
+        width: 70%;
         color: white;
     }
-    .infoBlock2 {
+    .infoBlock_mobile {
         margin: 10px 0;
         width: 100%;
+        min-width: 290px;
         height: 80px;
         border-radius: 80px;
         text-align: center;
@@ -356,25 +370,26 @@ label {
         color: white;
         box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.2);
     }
-    .infoBlock2 p {
-        padding: 15px;
+    .infoBlock_mobile p {
+        padding: 26px 20px 20px 20px;
         width: 100%;
         height: 80px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: white;
         box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.2);
     }
     .baseinfo {
         padding: 0;
-        height: 1000px;
+        height: 1100px;
     }
     .sign_header {
-        letter-spacing: 0.1em;
-        color: white;
-        display: flex;
         padding: 0;
+        color: white;
         font-size: 1.8rem;
         font-weight: 500;
+        text-align: center;
+        letter-spacing: 0.1em;
+        display: flex;
         justify-content: center;
     }
     .icon_row {
@@ -466,7 +481,7 @@ label {
     .logo_container {
         margin: 0;
         padding-top: 80px;
-        width: 400px;
+        width: 100%;
     }
     .logo_container h3 {
         color: white;
@@ -477,22 +492,24 @@ label {
     }
     .logo_container > p {
         display: flex;
-        margin-left: 60px;
+        margin-left: 50px;
         color: #87D9F1;
         font-size: 1.4rem;
     }
-    .social-logos2 {
+    .social-logos_mobile {
         margin-left: 50px;
         display: flex;
-        justify-content: space-around;
-        width: 250px;
+        justify-content: space-between;
+        width: 220px;
     }
     .list_container {
-        width: 480px;
+        margin-left: 50px;
         padding-top: 30px;
+        width: 280px;
         color: white;
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-between;
         font-size: 0.8rem;
         font-weight: 500;
         line-height: 2rem;
