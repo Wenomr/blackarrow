@@ -4,7 +4,6 @@ body {
 }
 .wrapper {
     width: 100%;
-    background-color: red;
 }
 .head {
     width: 100%;
@@ -33,7 +32,6 @@ body {
     padding-right: 150px;
     padding-left: 200px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
 }
 .menu > ul {
     display: flex;
@@ -56,7 +54,6 @@ body {
 }
 .arrow_header h1 {
     font-size: 3rem;
-    font-weight: 500;
 }
 .resizable_descr {
     margin-top: 13px;
@@ -110,7 +107,6 @@ body {
     padding-top: 80px;
     padding-bottom: 80px;
     font-size: 1.8rem;
-    font-weight: 500;
     justify-content: space-around;
 }
 .icon_row {
@@ -130,7 +126,6 @@ body {
 .objects {
     width: 100%;
     height: 750px;
-    background-color: darkblue;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 25% 25% 25% 25%;
@@ -141,14 +136,12 @@ body {
     grid-row-start: 1;
     grid-row-end: 3;
     background-image: url("/blackarrow/images/1.png");
-    background-color: red;
 }
 .nd_photo {
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: green;
     background-image: url("/blackarrow/images/2.png");
 }
 .rd_photo {
@@ -156,7 +149,6 @@ body {
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 5;
-    background-color: purple;
     background-image: url("/blackarrow/images/3.png");
 }
 .th_photo {
@@ -164,16 +156,13 @@ body {
     grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 5;
-    background-color: yellow;
     background-image: url("/blackarrow/images/4.png");
 }
-
 .photo_label {
     margin:30px;
     margin-top: 300px;
     color: white;
     flex-direction: column-reverse;
-    font-weight: 500;
     font-size: 1.7rem;
 }
 .main_photo {
@@ -262,7 +251,6 @@ label {
     background-color: rgb(10, 9, 9);
     display: flex;
     justify-content: space-around;
-    
 }
 .logo_container {
     margin-left: 100px;
@@ -283,7 +271,6 @@ label {
     display: flex;
     justify-content: space-around;
     font-size: 0.8rem;
-    font-weight: 500;
     line-height: 2rem;
 }
 .social-logos {
@@ -292,19 +279,10 @@ label {
     display: flex;
     justify-content: space-around;
 }
-.nav_mobile {
-    display: none;
+.font_500 {
+    font-weight: 500;
 }
-.infoBlockBar_mobile {
-    display: none;
-}
-.description_mobile {
-    display: none;
-}
-.logo_container > p {
-    display: none;
-}
-.social-logos_mobile {
+.mobile {
     display: none;
 }
 
@@ -375,8 +353,6 @@ label {
         width: 100%;
         height: 80px;
         font-size: 1rem;
-        color: white;
-        box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.2);
     }
     .baseinfo {
         padding: 0;
@@ -386,7 +362,6 @@ label {
         padding: 0;
         color: white;
         font-size: 1.8rem;
-        font-weight: 500;
         text-align: center;
         letter-spacing: 0.1em;
         display: flex;
@@ -423,14 +398,12 @@ label {
         grid-column-end: 6;
         grid-row-start: 3;
         grid-row-end: 4;
-        
     }
     .th_photo {
         grid-column-start: 1;
         grid-column-end: 6;
         grid-row-start: 4;
         grid-row-end: 5;
-        
     }
     .photo_label {
         margin:30px;
@@ -438,7 +411,6 @@ label {
         color: white;
         display: flex;
         align-self: flex-end;
-        font-weight: 500;
         font-size: 1.7rem;
     }
     .contacts {
@@ -474,9 +446,8 @@ label {
         width: 100%;
         height: 500px;
         background-color: rgb(10, 9, 9);
-        display: flex;
-        justify-content: space-around;
         flex-direction: column; 
+        box-sizing: content-box;
     }
     .logo_container {
         margin: 0;
@@ -505,14 +476,12 @@ label {
     .list_container {
         margin-left: 50px;
         padding-top: 30px;
-        width: 280px;
+        width: 300px;
+        min-width: 280px;
         color: white;
-        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         font-size: 0.8rem;
-        font-weight: 500;
         line-height: 2rem;
     }
-
 }
