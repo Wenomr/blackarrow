@@ -1,0 +1,73 @@
+.wrapper {
+    font-family: 'Montserrat', sans-serif;
+    height: 703px;
+    background-color: red;
+    display: flex;
+}
+.slide { 
+    width: 350px;
+    background-color: green;
+    box-sizing: content-box;
+    padding: 60px 35px 60px 35px;
+}
+.slide_content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: blue;
+}
+#profile_photo {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: black;
+}
+.main_block {
+    padding: 60px 40px 60px 40px;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+.main_block > h2 {
+    font-size: 1.5rem;
+    display: flex;
+    margin: 30px 0 35px 0;
+
+}
+.menu {
+    display: block;
+    letter-spacing: 0.02em;
+    width: 100%;
+    height: 28px;
+}
+.menu > ul {
+    display: flex;
+    justify-content: space-between; 
+    margin: 0 auto;
+}
+.menu > ul a {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+}
+.menu_light {
+    display: block;
+    letter-spacing: 0.02em;
+    width: 100%;
+    height: 28px;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu_light > ul {
+    display: flex;
+    justify-content: space-between; 
+    margin: 0 auto;
+}
+.menu_light > ul a {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+}
+
