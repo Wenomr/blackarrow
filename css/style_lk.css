@@ -1,14 +1,14 @@
 .wrapper {
     font-family: 'Montserrat', sans-serif;
     color: white;
-    height: 1080px;
+    height: 900px;
     width: 100%;
     background-color: white;
     display: flex;
 }
 .slide { 
-    height: 800px;
-    width: 300px;
+    height: 100%;
+    width: 320px;
     background-color: #211515;
     box-sizing: content-box;
     padding: 60px 60px 60px 60px;
@@ -92,7 +92,7 @@ h3 {
     font-weight: 500;
     color: #528290;
     display: flex;
-    margin: 30px 0 35px 0;
+    margin: 40px 0 35px 0;
 }
 .menu {
     display: block;
