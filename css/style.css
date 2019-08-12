@@ -203,15 +203,20 @@ body {
     border-radius: 4px;
 }
 input {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     height: 40px;
+    padding: 5px 10px 5px 10px;
     color: rgb(54, 54, 54);
 }
 textarea {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(158, 158, 158);
-    padding-top: 5px;
     height: 90px;
+    padding: 5px 10px 5px 10px;
+    color: rgb(54, 54, 54);
 }
 label {
     font-size: 0.9rem;
