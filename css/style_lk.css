@@ -30,7 +30,7 @@
     height: 80px;
     width: 80px;
     border-radius: 40px;
-    background-image: url('/blackarrow/images/Ellipse.png');
+    background-image: url('/images/Ellipse.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +55,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height:140px;
+    height: 140px;
     font-size: 1.1rem;
     line-height: 20px;
 }
@@ -103,6 +103,7 @@ h3 {
     height: 28px;
 }
 .menu > ul {
+    width:100%;
     display: flex;
     justify-content: space-between; 
 }
@@ -125,11 +126,12 @@ h3 {
 .menu_light > ul {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .menu_light > ul li {
     border-radius: 20px;
     color: #528290;
-    padding: 10px 20px 10px 20px;
+    padding: 8px 15px 10px 15px;
 }
 .menu_light > ul li:hover {
     background-color: #528290;
