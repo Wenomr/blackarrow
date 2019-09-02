@@ -9,7 +9,6 @@
 .slide { 
     height: 900px;
     width: 300px;
-    min-width: 300px;
     background-color: #211515;
     box-sizing: content-box;
     padding: 40px 60px 60px 60px;
@@ -217,9 +216,14 @@ h3 {
     .wrapper {
         height: 1250px;
     }
-    .slide { 
-        display: none;
+    .slide {
+        position: absolute;
+        box-sizing: border-box;
+        left: -300px;
+        transition: left .2s;
         height: 1250px;
+        -webkit-transform: translateZ(0);
+        visibility: hidden;
     }
     .services_block {
         height: 600px;
@@ -262,9 +266,9 @@ h3 {
         text-align: center;
     }
     .widget {
-        display: flex;
-        position: fixed;
+        left: 0px;
         z-index: 4;
+        visibility: visible;
     }
 }
 
