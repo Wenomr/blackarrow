@@ -7,7 +7,7 @@ body {
 }
 .slide { 
     height: 2000px;
-    width: 300px;
+    width: 370px;
     background-color: #211515;
     position: absolute;
     box-sizing: border-box;
@@ -21,6 +21,7 @@ body {
 }
 .slide_content > ul {
     height: 250px;
+    width: 280px;
     flex-direction: column;
     display: flex;
     justify-content: space-between; 

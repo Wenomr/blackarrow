@@ -8,14 +8,14 @@
 }
 .slide { 
     height: 900px;
-    width: 300px;
+    width: 370px;
     background-color: #211515;
     box-sizing: content-box;
     padding: 40px 60px 60px 60px;
 }
 .slide_content {
     height: 900px;
-    width: 100%;
+    width: 280px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
